@@ -1,0 +1,16 @@
+<program> ::= <cmpdstmt>
+<arraydecl> ::= <identifier> = []
+<cmpdstmt> ::= /* <stmtlist> */
+<stmtlist> ::= <stmt> | <stmt> <stmtlist>
+<stmt> ::= <simplstmt> | <structstmt>
+<simplstmt> ::= <assignstmt> | <iostmt>
+<assignstmt> ::= <identifier> = <expression>
+<expression> ::= <expression>+<term> | <expression>-<term> | <expression>/<term> | <term>
+<term> ::= <term> * <factor> | <factor>
+<factor> ::= (<expression>) | <identifier>
+<iostmt> ::= read(<identifier>) | write(<identifier>)
+<structstmt> ::= <cmpdstmt> | <ifstmt> | <whilestmt>
+<ifstmt> ::= if <condition> : <stmt> else : <stmt> 
+<whilestmt> ::= while <condition> : <stmt>
+<condition> ::= <expression> <relation> <expression>
+<relation> ::= < | <= | = | != | >= | >
