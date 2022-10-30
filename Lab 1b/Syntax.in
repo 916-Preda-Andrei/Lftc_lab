@@ -4,13 +4,14 @@
 <stmtlist> ::= <stmt> | <stmt> <stmtlist>
 <stmt> ::= <simplstmt> | <structstmt>
 <simplstmt> ::= <assignstmt> | <iostmt>
-<assignstmt> ::= <identifier> = <expression>
-<expression> ::= <expression>+<term> | <expression>-<term> | <expression>/<term> | <term>
+<assignstmt> ::= <identifier> = <expression> | <arraydecl>
+<expression> ::= <expression>+<term> | <expression>-<term> | <expression>/<term> | <expression>%<term> | <term>
 <term> ::= <term> * <factor> | <factor>
 <factor> ::= (<expression>) | <identifier>
 <iostmt> ::= read(<identifier>) | write(<identifier>)
-<structstmt> ::= <cmpdstmt> | <ifstmt> | <whilestmt>
+<structstmt> ::= <cmpdstmt> | <ifstmt> | <whilestmt> | <forstmt>
 <ifstmt> ::= if <condition> : <stmt> else : <stmt> 
 <whilestmt> ::= while <condition> : <stmt>
+<forstmt> ::= go <identifier> to <expression> :
 <condition> ::= <expression> <relation> <expression>
 <relation> ::= < | <= | = | != | >= | >
