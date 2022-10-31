@@ -1,0 +1,22 @@
+a.Special symbols, representing:
+- operators: + ,- ,* ,/ ,% ,= ,< ,<= ,= ,>=
+- separators: [ ], (), :, space 
+- reserved words: else, if, read, while, write, go, to 
+
+b.identifiers:
+-a sequence of letters and digits, such that the first character is a letter; the rule is: 
+<identifier> ::= <letter> | <identifier><letter> | <identifier><digit>
+<letter> ::= a | b | ... | z | A | B | ... | Z
+<nonzerodigit> :: = 1 | 2 | ... | 9
+<digit> ::= 0 | <nonzerodigit>
+
+c.constants 
+1.integer - rule: 
+<noconst> ::= +<no> | -<no> | <no> 
+<no> ::= <digit> | <nonzerodigit><no>
+2.character 
+<character> ::= ‘<letter>’| ‘<digit>’ 
+3.string 
+<constchar> ::= “<string>” 
+<string>::= <char> | <char><string>
+<char> ::= <letter>|<digit>
