@@ -1,0 +1,11 @@
+/*
+myArray = [ ]
+read ( n )
+go i = 0 to i < n :
+ read ( x )
+ myArray [ i ] = x
+sum = 0
+go i = 0 to i < n :
+ sum = sum + myArray [ i ]
+write ( sum )
+*/
