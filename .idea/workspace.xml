@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="149abea1-3527-4edf-a72e-29182f53f3bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Input/Token.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Input/p1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Input/p1err.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Input/p2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Input/p3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/PIF.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Output/ST.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Element.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/PifElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Scanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ScannerException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lftc_lab/main/HashTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lftc_lab/main/HashTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lftc_lab/main/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lftc_lab/main/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lftc_lab/main/SymbolTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lftc_lab/main/SymbolTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/HashTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/SymbolTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/PIF.out" beforeDir="false" afterPath="$PROJECT_DIR$/Output/PIF.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/ST.out" beforeDir="false" afterPath="$PROJECT_DIR$/Output/ST.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/documentation.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lftc_lab/main/Scanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lftc_lab/main/Scanner.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +47,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -111,7 +99,10 @@
       <workItem from="1667219198661" duration="4420000" />
       <workItem from="1667299908705" duration="3632000" />
       <workItem from="1667391098564" duration="4505000" />
-      <workItem from="1667679747338" duration="6541000" />
+      <workItem from="1667679747338" duration="6772000" />
+      <workItem from="1667753926422" duration="82000" />
+      <workItem from="1667823041076" duration="3807000" />
+      <workItem from="1668362197105" duration="3137000" />
     </task>
     <servers />
   </component>
