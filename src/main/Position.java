@@ -13,4 +13,9 @@ public class Position {
         this.posInBucket = posInBucket;
         this.posInList = posInList;
     }
+
+    @Override
+    public String toString(){
+        return "{" + Integer.toString(posInBucket) + ", " + Integer.toString(posInList) + "}";
+    }
 }

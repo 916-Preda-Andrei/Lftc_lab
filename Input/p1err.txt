@@ -1,0 +1,15 @@
+/*
+read ( a )
+read ( b )
+read ( 1c )
+if a ~ b :
+ if a > c :
+  write ( a )
+ else :
+  write ( c )
+else :
+ if b > c :
+  write ( b )
+ else :
+  write ( c )
+*/

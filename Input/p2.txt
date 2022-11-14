@@ -1,0 +1,11 @@
+/*
+read ( n )
+ok = true
+go i = 2 to i < n :
+ if n % i == 0 :
+  ok = false
+if ok :
+ write ( "Prime" )
+else :
+ write ( "NotPrime" )
+*/
