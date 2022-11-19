@@ -1,0 +1,5 @@
+states=p,q,r
+initialState=p
+finalStates=r
+alphabet=0,1
+transitions=(p,0,q);(p,1,r);(q,0,q);(q,1,r)
