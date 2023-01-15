@@ -1,0 +1,58 @@
+%{
+#include <math.h> 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int lines = 0;
+%}
+
+%option noyywrap
+%option caseless
+
+letter [a-zA-Z] 
+nonzerodigit [1-9]
+digit [0{nonzerodigit}]
+identifier {letter}({letter}|{digit})*
+no ({nonzerodigit}{digit}*)|0
+noconst [+-]?{no}
+char ({letter}|{digit})
+character [']{char}[']
+string {char}+
+constchar ["]{string}["]
+
+%%
+
+"go"|"to"|"if"|"else"|"while"|"read"|"write" printf("%s - reserved word\n", yytext);
+
+{identifier} printf("%s - identifier\n", yytext);
+
+{noconst} printf("%s - int constant\n", yytext);
+
+{constchar} printf("%s - str constant\n", yytext);
+
+"+"|"-"|"*"|"/"|"%"|"="|"=="|"!="|"<"|"<="|">"|">=" printf("%s - operator\n", yytext);
+
+"["|"]"|":"|"("|")"|" " printf("%s - separator\n", yytext);
+
+"{"[^}\n]*"}" 		/* eat up one-line comments */ 
+
+[ \t]+ {}		/* eat up whitespace */ 
+	
+[\n]+	{++lines;}
+	
+. printf("Error for token %s at line %d\n", yytext, lines);
+
+%%
+
+main( argc, argv ) 
+int argc; 
+char **argv; 
+{ 
+    ++argv, --argc; /* skip over program name */ 
+    if ( argc > 0 ) 
+    yyin = fopen( argv[0], "r" ); 
+    else 
+     yyin = stdin; 
+    yylex(); 
+} 
